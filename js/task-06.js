@@ -11,9 +11,11 @@ const boxes = document.querySelector('#boxes');
 
 
 function createBoxes(amount) {
+  boxes.innerHTML = '';
   let scale = 30;
   for (let i = 0; i < amount; i++) {
     boxes.insertAdjacentHTML('beforeend', `<div style="width: ${scale += 10}px; height: ${scale}px; background-color: ${getRandomHexColor()};"></div>`);
+    input.value = '';
   }
 }
 
